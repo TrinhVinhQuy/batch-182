@@ -17,186 +17,14 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        a:hover{
-            text-decoration: none;
-        }
-
-
-
-        li, ul{
-            list-style: none;
-        }
-
-        .nav__item{
-            padding: 8px 0;
-            color: #000;
-        }
-
-        .nav__link, .prod__item--name{
-            font-weight: 400;
-            color: #000;
-            font-size: 18px;
-        }
-
-        .nav__link:hover, .prod__item--name:hover{
-            color: #fca120;
-        }
-
-        .prod__header {
-            background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.3)),url('./image/breadcrumb.webp') center / cover no-repeat;
-            min-height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .prod__header .prod__header--title {
-            text-align: center;
-            font-size: 40px;
-            color: #fca120;
-            font-weight: 600;
-        }
-
-        .link{
-            text-align: center;
-            margin: 10px 0
-        }
-
-        .link .homepage span{
-            color: #fff
-        }
-
-        .link li{
-            display: inline;
-        }
-        
-        .link .homepage .mr_lr svg{
-            width: 10px;
-            height: 10px;
-            margin-top: -2px;
-        }
-
-        .link .all-prod{
-            color: #fca120;
-        }
-
-        .link span{
-            font-weight: 400;
-        }
-        
-        .prod__body{
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-
-        .prod__body--sidebar{
-            padding: 0 15px;
-            flex-basis: 20%;
-        }
-
-        .sidebar__content{
-            margin-bottom: 30px;
-            background: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 4px 6px 4px 6px #8888884a;
-        }
-
-        .sidebar__content--title {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            position: relative
-        }
-
-        .sidebar__content--title::before{
-            background: #fca120;
-            content: '';
-            right: 0;
-            left: 0;
-            position: absolute;
-            bottom: -5px;
-            height: 3px;
-            display: block;
-            z-index: 1;
-            width: 40%;
-        }
-
-        .prod__search--nav .nav__item{
-            font-weight: 500;
-            font-size: 18px;
-        }
-
-        .prod__body--list{
-            margin-left: 32px;
-            flex-basis: 70%;
-        }
-
-        .prod__list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: flex-start;
-        }
-
-        .prod__list .prod__item{
-            border-radius: 5px;
-            overflow: hidden;
-            background: #fff;
-            position: relative;
-            background: #fff;
-            flex-basis: 23%;
-            margin-bottom: 16px;
-            border: 1px solid #c5c3c3e9;
-        }
-
-        .prod__item--image img{
-            width: 100%;
-        }
-        .prod__item--detail{
-            text-align: center;
-            padding: 10px 0 8px 0;
-            height: 150px;
-        }
-        .prod__item--name{
-            font-weight: 400;
-            font-size: 18px;
-            padding: 0 8px;
-        }
-
-        .prod__item--cost{
-            font-weight: 700;
-            font-size: 18px;
-            margin-top: 24px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/productcss/product__list.css">
 </head>
 <body>
     <div class="bodywrap">
         <div class="layout-collection">
-            <section class="prod__header">
-                <div class="container">
-                    <div class="prod__header--title">
+            <section class="breadcrumb">
+                <div class="container-fluid">
+                    <div class="breadcrumb--title">
                         Tất cả sản phẩm
                     </div>
                     <ul class="link">
@@ -209,235 +37,667 @@
                         <li class="all-prod"><strong><span> Tất cả sản phẩm</span></strong></li>
                     </ul>
             </section>
-            <section class="prod__body">
-                <div class="row">
-                    <aside class="prod__body--sidebar">
-                        <section class="sidebar__content">
-                            <div class="sidebar__content--title">
+            <section class="container-fluid ">
+                <div class="row mx-5">
+                    <aside class="col-lg-3 aside__mobile">
+                        <div class="aside__menu">
+                            <div class="aside__menu--title">
                                 Danh mục sản phẩm
                             </div>
                             <nav class="nav-category">
-                                <ul class="navbar-pills">
-                                    <li class="nav__item"><a href="" class="nav__link">Phòng khách</a></li>
-                                    <li class="nav__item"><a href="" class="nav__link">Phòng bếp</a></li>
-                                    <li class="nav__item"><a href="" class="nav__link">Phòng làm việc</a></li>
-                                    <li class="nav__item"><a href="" class="nav__link">Đồ trang trí</a></li>
-                                    <li class="nav__item"><a href="" class="nav__link">Bộ sưu tầm</a></li>
-                                </ul>
-                            </nav>
-                        </section>
-                        <div class="sidebar__content">
-                            <div class="sidebar__content--title">
-                                Bộ lọc sản phẩm
-                            </div>
-                            <nav class="nav-category prod__search--nav">
-                                <ul class="navbar-pills">
-                                    <li class="nav__item">Chọn mức giá</li>
-                                    <li class="nav__item">Loại</li>
-                                    <li class="nav__item">Độ tuổi</li>
-                                    <li class="nav__item">Chất liệu</li>
+                                <ul class="nav navbar-pills">
+                                    <li class="nav-item relative">
+                                        <a href="" class="nav-link">
+                                            Phòng khách
+                                        </a>
+                                        <i id= "open__subnav"class="fa fa-plus nav--open" aria-hidden="true"></i>
+                                        <ul id="subnav_js" class="subnav">
+                                            <li class="subnav-item"><a href="" class="subnav-link">Ghế Sofa</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Bàn Sofa</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Bàn Cafe</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Bàn Trà</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Tủ Kệ Tivi</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Tủ Giày</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Tủ Trang Trí</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item relative">
+                                        <a href="" class="nav-link">
+                                            Phòng bếp
+                                        </a>
+                                        <i id= "open__subnav"class="fa fa-plus nav--open" aria-hidden="true"></i>
+                                        <ul id="subnav_js" class="subnav">
+                                            <li class="subnav-item"><a href="" class="subnav-link">Bàn Ăn</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Ghế Ăn</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Bộ Bàn Ăn</a></li>
+                                            <li class="subnav-item"><a href="" class="subnav-link">Tủ Bếp</a></li>
+                                        </ul>
+                                        <li class="nav-item relative">
+                                            <a href="" class="nav-link">
+                                                Phòng ngủ
+                                            </a>
+                                            <i id= "open__subnav"class="fa fa-plus nav--open" aria-hidden="true"></i>
+                                            <ul id="subnav_js" class="subnav">
+                                                <li class="subnav-item"><a href="" class="subnav-link">Giường Ngủ</a></li>
+                                                <li class="subnav-item"><a href="" class="subnav-link">Tủ Đầu Giường</a></li>
+                                                <li class="subnav-item"><a href="" class="subnav-link">Tủ Quần Áo</a></li>
+                                                <li class="subnav-item"><a href="" class="subnav-link">Bàn Trang Điểm</a></li>
+                                            </ul>
+                                            <li class="nav-item relative">
+                                                <a href="" class="nav-link">
+                                                    Phòng làm việc
+                                                </a>
+                                                <i id= "open__subnav"class="fa fa-plus nav--open" aria-hidden="true"></i>
+                                                <ul id="subnav_js" class="subnav">
+                                                    <li class="subnav-item"><a href="" class="subnav-link">Bàn Làm Việc</a></li>
+                                                    <li class="subnav-item"><a href="" class="subnav-link">Ghế Văn Phòng</a></li>
+                                                    <li class="subnav-item"><a href="" class="subnav-link">Tủ & Kệ</a></li>
+                                                </ul>
+                                                <li class="nav-item relative">
+                                                    <a href="" class="nav-link">
+                                                        Đồ trang trí
+                                                    </a>
+                                                    <i id= "open__subnav"class="fa fa-plus nav--open" aria-hidden="true"></i>
+                                                    <ul id="subnav_js" class="subnav">
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Bình - Chậu - Lọ</a></li>
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Nệm</a></li>
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Chăn Ga - Gối Nệm</a></li>
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Cây - Hoa</a></li>
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Đèn - Đèn Trang Trí</a></li>
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Đồng Hồ</a></li>
+                                                        <li class="subnav-item"><a href="" class="subnav-link">Gương</a></li>
+                                                    </ul>
+                                    <li class="nav-item"><a href="" class="nav-link">Bộ sưu tập</a></li>
                                 </ul>
                             </nav>
                         </div>
+                        <div class="aside__menu">
+                            <div class="aside__menu--title">
+                                Bộ lọc sản phẩm
+                            </div>
+                            <nav class="nav-category">
+                                <ul class="nav navbar-pills">
+                                    <li class="nav-item nav-sort">
+                                        Chọn mức giá
+                                        <i id= "open__subnav" class="fa fa-plus nav--open" aria-hidden="true" style="font-size: 16px;"></i>
+                                        <ul id="subnav_js" class="subnav">
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Dưới 100.000đ
+                                                        </span>
+                                                </label>
+                                            </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Từ 100.000đ - 200.000đ
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Từ 200.000đ - 300.000đ
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                             Từ 300.000đ - 500.000đ
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Từ 500.000đ - 1 triệu
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Từ 1 triệu - 2 triệu
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Từ 2 triệu - 5 triệu
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Từ 5 triệu - 10 triệu
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Trên 10 triệu
+                                                        </span>
+                                                </label>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item nav-sort">
+                                        Loại
+                                        <i id= "open__subnav" class="fa fa-plus nav--open" aria-hidden="true" style="font-size: 16px;"></i>
+                                        <ul id="subnav_js" class="subnav">
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            Bàn
+                                                        </span>
+                                                </label>
+                                    </ul>
+                                    </li>
+                                    <li class="nav-item nav-sort">
+                                        Độ tuổi
+                                        <i id= "open__subnav" class="fa fa-plus nav--open" aria-hidden="true" style="font-size: 16px;"></i>
+                                        <ul id="subnav_js" class="subnav">
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            1 tháng tuổi
+                                                        </span>
+                                                </label>
+                                            </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            3 tháng tuổi
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            6 tháng tuổi
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                             12 tháng tuổi
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            2 tuổi
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            3 tuổi 
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            4 tuổi 
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                             5 tuổi
+                                                        </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item nav-sort">
+                                        Chất liệu
+                                        <i id= "open__subnav" class="fa fa-plus nav--open" aria-hidden="true" style="font-size: 16px;"></i>
+                                        <ul id="subnav_js" class="subnav">
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            90g
+                                                        </span>
+                                                </label>
+                                            </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            100g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            107g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                             120g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            200g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            250g 
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            400g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            500g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                            <li class="subnav-item" style="padding: 4px">
+                                                <label for="">
+                                                    <input type="checkbox" name="" id="">
+                                                        <span style="font-weight: 470; font-size: 16px">
+                                                            700g
+                                                        </span>
+                                                </label>
+                                                </li>
+                                                <li class="subnav-item" style="padding: 4px">
+                                                    <label for="">
+                                                        <input type="checkbox" name="" id="">
+                                                            <span style="font-weight: 470; font-size: 16px">
+                                                                900g
+                                                            </span>
+                                                    </label>
+                                                    </li>
+                                                    <li class="subnav-item" style="padding: 4px">
+                                                        <label for="">
+                                                            <input type="checkbox" name="" id="">
+                                                                <span style="font-weight: 470; font-size: 16px">
+                                                                    1.4k      g
+                                                                </span>
+                                                        </label>
+                                                        </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <button id="close__aside"></button>
+
                     </aside>
-                    <section class="prod__body--list">
-                        <div class="prod__list">
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_1.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Đèn Tre Đám Mây
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        290.000
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_2.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Đèn Bàn Chicago Mạ Vàng
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        997.000
-                                    </p>
+                    <section class="main-content col-lg-9 col-12">
+                        <div class="row row-fix product__list ">
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_1.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Đèn tre đám mây</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            290.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_3.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        549.000
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_4.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su màu tự nhiên
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        599.000
-                                    </p>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_2.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Đèn Bàn Chicago Mạ Vàng</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            290.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_5.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Bàn Sofa – Bàn Cafe – Bàn Trà Tròn Cao Gỗ
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        799.000
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_6.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Set 2 Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        1.480.000
-                                    </p>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_3.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            549.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_7.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        1.590.000
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_8.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Bàn Sofa - Bàn Cafe - Bàn Trà Gỗ
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        1.790.000
-                                    </p>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_4.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su màu tự</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            599.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_9.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Tủ Giày 3 Ngăn 2 Tầng Marcell
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        1.990.000
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_10.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Ghế Đôn Sofa Gỗ Cao Su Tự Nhiên
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        1.990.000
-                                    </p>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_5.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Tròn Cao Gỗ</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            799.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_11.webp" alt="">
-                                </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Kệ gỗ - Kệ sách
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        2.290.000
-                                    </p>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_6.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Set 2 Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            1.480.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod__item">
-
-                                <div class="prod__item--image">
-                                    <img src="./image/product_12.webp" alt="">
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_7.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            1.590.000₫
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="prod__item--detail">
-                                    <a href="" class="prod__item--name">
-                                        Tủ kệ Tivi Gỗ
-                                    </a>
-
-                                    <p class="prod__item--cost">
-                                        2.490.000
-                                    </p>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_8.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Bàn Sofa - Bàn Cafe - Bàn Trà Gỗ</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            1.790.000₫
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_9.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Tủ Giày 3 Ngăn 2 Tầng Marcell</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            1.990.000₫
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_10.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Ghế Đôn Sofa Gỗ Cao Su Tự Nhiên</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            1.990.000₫
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_11.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Kệ Gỗ - Kệ Sách</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            2.290.000₫
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3 col-fix">
+                                <div class="product__item">
+                                    <div class="product__item--img">
+                                        <a href="" class="product__link">
+                                            <img src="./image/product_12.webp" alt="">
+                                        </a >    
+                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                        <div class="product__item--button">
+                                            <button class="btn__view btn__cart">
+                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                            <button class="btn__view btn__search">
+                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--info">
+                                        <p class="product__name">
+                                            <a href="" class="product__link">Tủ Kệ Tivi Gỗ</a>
+                                        </p>
+                                        <p class="product__cost">
+                                            2.490.000₫
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
             </section>
-        </div>
+            <button id="open__aside"></button>
+            <script src="./js/productjs/product.js"></script>
     </div>
 </body>
 </html>
