@@ -18,10 +18,17 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <style>
         body {
             margin: 0%;
             padding: 0;
+            overflow-x: hidden;
         }
 
         .block-header {
@@ -52,6 +59,98 @@
             margin-left: 20px;
         }
 
+
+
+        .block-slide {
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/slider_1.jpg?1691398940661);
+            display: grid;
+            justify-items: start;
+            align-items: center;
+        }
+
+        .card-dathang,
+        .card-noibat {
+
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            color: #fff;
+            padding: 50px;
+            margin-left: 10%;
+        }
+
+        .card-dathang {
+            display: none;
+        }
+
+        .card-noibat {
+            width: 60%;
+        }
+
+        .block-sp-noibat {
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/image_module_phongkhach.png?1691398940661);
+            display: grid;
+            justify-items: start;
+            align-items: center;
+        }
+
+        .block-sanpham-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            font-size: 15px;
+        }
+
+        .block-sanpham-item img {
+            width: 100px;
+            height: 70px;
+        }
+
+        .title {
+            color: #fda121;
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .content {
+            font-size: 20px;
+        }
+
+        .block-tintuc {
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            justify-items: start;
+            align-items: end;
+            padding: 3% 2%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(https://bizweb.dktcdn.net/100/480/479/articles/bo-suu-tap-may-net-viet-duong-da.jpg?v=1678782553320);
+        }
+
+        .title-tintuc {
+            font-size: 70px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .content-tintuc {
+            font-size: 35px;
+            color: white;
+        }
+
         @media only screen and (max-width: 450px) {
 
             .footer-left,
@@ -67,6 +166,113 @@
             .block-footer-right {
                 margin-left: 0px;
             }
+
+            .block-slide,
+            .block-sp-noibat {
+                height: 250px;
+            }
+
+            .slide {
+                height: 270px;
+            }
+
+            .card-noibat {
+                width: 80%;
+            }
+
+            .card-noibat {
+                padding: 20px;
+            }
+
+            .title {
+                color: #fda121;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .content {
+                font-size: 15px;
+            }
+
+            .img-khuyenmai {
+                width: 100px;
+                height: 100px;
+            }
+
+            .block-tintuc {
+                height: 300px;
+            }
+
+            .title-tintuc {
+                font-size: 30px;
+            }
+
+            .block-tintuc {
+                padding: 5% 6%;
+            }
+
+            .content-tintuc {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (min-width: 450px),
+        (max-width: 1000) {
+            .slide {
+                height: 270px;
+            }
+
+            .card-noibat {
+                width: 80%;
+            }
+
+            .block-tintuc {
+                height: 550px;
+            }
+
+            .block-sanpham-item {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+
+            .card-dathang,
+            .card-noibat {
+                display: block;
+            }
+
+            .slide {
+                height: 300px;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .block-tintuc {
+                height: 288px !important;
+            }
+
+            .title-tintuc {
+                font-size: 30px;
+            }
+
+            .content-tintuc {
+                font-size: 15px;
+            }
+        }
+
+        .block-khuyenmai {
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/background_module_flashsale.png?1691398940661);
+            display: grid;
+            justify-items: start;
+            align-items: center;
+            padding: 5% 7%;
         }
     </style>
 </head>
@@ -94,8 +300,8 @@
                             Sản Phẩm
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Phòng Khách</a>
-                            <a class="dropdown-item" href="#">Phòng Bếp</a>
+                            <a class="dropdown-item" href="phongkhach.html">Phòng Khách</a>
+                            <a class="dropdown-item" href="phongbep.html">Phòng Bếp</a>
                             <a class="dropdown-item" href="#">Phòng Ngủ</a>
                             <a class="dropdown-item" href="#">Phòng Làm Việc</a>
                             <a class="dropdown-item" href="#">Đồ Trang Trí</a>
@@ -108,20 +314,431 @@
                     <li class="nav-item active mr-2">
                         <a class="nav-link" href="#">Liên Hệ <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active mr-2">
-                        <a class="nav-link d-flex align-items-center" href="#">Giỏ Hàng <span
-                                class="sr-only">(current)</span></a>
-                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit"><i class="fa fa-search"
                             aria-hidden="true"></i></button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i></i></button>
                 </form>
             </div>
         </nav>
     </header>
-    <div style="height: 500px;"></div>
+    <!-- phần body -->
+    <section style="width: 100%; height: 100px;"></section>
+    <section class="block-slide">
+        <div class="card-dathang">
+            <div style="color: #fda121;
+            font-size: 35px;
+            font-weight: 700;">Nội thất phòng khách</div>
+            <div style="font-size: 20px;">Giảm đến 50% khi đặt hàng qua web</div>
+            <button style="color: #fff;
+            padding: 8px 30px;
+            border: 1px solid #fff;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-top: 15px;">Xem ngay</button>
+        </div>
+    </section>
+    <section class="block-sanpham" style="padding: 5% 2%;background-color: #6c757d36;">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item ">
+                    <div>
+                        <div>Ghế</div>
+                        <div>(6 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_1.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Bàn ắn</div>
+                        <div>(9 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_2.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Gường ngủ</div>
+                        <div>(2 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_3.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Đèn</div>
+                        <div>(2 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_4.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Kệ để giày</div>
+                        <div>(2 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_5.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Ghế sofa</div>
+                        <div>(6 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_5.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Bàn</div>
+                        <div>(9 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_7.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Kệ tivi</div>
+                        <div>(2 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_8.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 p-2">
+                <div class="block-sanpham-item">
+                    <div>
+                        <div>Tủ quần áo</div>
+                        <div>(10 sản phẩm)</div>
+                    </div>
+                    <div>
+                        <img src="https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/danhmuc_9.jpg?1691398940661"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block-noithatphongkhach" style="padding: 15px 7%;background-color: #6c757d36;">
+        <div style="margin-bottom: 30px;
+            position: relative;
+            font-weight: 600;font-size: 2rem;">Sản phẩm nổi bật
+        </div>
+        <div class="row">
+            <div class="col-sm-7 col-xl-7 mb-2">
+                <div class="block-sp-noibat">
+                    <div class="card-noibat">
+                        <div class="title">Nội thất phòng khách</div>
+                        <div class="content">
+                            Nhiều sản phẩm giúp phòng khách của bản trở nên phong phú hơn
+                        </div>
+                        <button style="color: #fff;
+                        padding: 8px 30px;
+                        border: 1px solid #fff;
+                        display: inline-block;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        margin-top: 15px;">Xem ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-xl-5">
+                <div class="slide-sanpham owl-carousel">
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/protrangxamnoithatmohoban.jpg?v=1678770554273"
+                            alt="">
+                        <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/2.jpg?v=1678770551987"
+                            alt="">
+                        <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/2b4a3a925daeb45f28fee76241dc4d.jpg?v=1678770547647"
+                            alt="">
+                        <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Tròn Cao Gỗ</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/24c3627dfeda74069a071252d932cb.jpg?v=1678770546000"
+                            alt="">
+                        <div style="text-align: center;">Set 2 Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/27c732f60dba74cc9b1414aefe35b0.jpg?v=1678770544020"
+                            alt="">
+                        <div style="text-align: center;">Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block-noithatphongngu" style="padding: 15px 7%;background-color: #6c757d36;">
+        <div class="row">
+            <div class="col-sm-5 col-xl-5">
+                <div class="slide-sanpham owl-carousel">
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/28bb17172d53145dead8616047ba61.jpg?v=1678770527917"
+                            alt="">
+                        <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/21c58ff4d903f45fba420e0c81af6b.jpg?v=1678770526090"
+                            alt="">
+                        <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/19f3411832e264154b742833a94f2c.jpg?v=1678770523820"
+                            alt="">
+                        <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Tròn Cao Gỗ</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/21e21052f1d234277b684eef6f599a.jpg?v=1678770523067"
+                            alt="">
+                        <div style="text-align: center;">Set 2 Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                    <div class="slide"
+                        style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                        <img class="mb-2" style="border-radius: 10px;"
+                            src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/2591991986e8c4588bbb17fc3459ee.jpg?v=1678770522073"
+                            alt="">
+                        <div style="text-align: center;">Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh</div>
+                        <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7 col-xl-7 mb-2">
+                <div class="block-sp-noibat"
+                    style="background-image: url(https://bizweb.dktcdn.net/100/480/479/themes/900388/assets/image_module_phongngu.png?1691398940661) !important;">
+                    <div class="card-noibat">
+                        <div class="title">Nội thất phòng ngủ</div>
+                        <div class="content">
+                            Nhiều sản phẩm giúp phòng khách của bản trở nên phong phú hơn
+                        </div>
+                        <button style="color: #fff;
+                        padding: 8px 30px;
+                        border: 1px solid #fff;
+                        display: inline-block;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        margin-top: 15px;">Xem ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="height: max-content; padding: 15px 7%;background-color: #6c757d36;">
+        <div style="margin-bottom: 30px;
+            position: relative;
+            font-weight: 600;font-size: 2rem;">Tin tức mới nhất
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xl-4 block-tintuc mb-2">
+                <div>
+                    <div class="title-tintuc">
+                        Phòng ngủ Mây cổ điển, trầm ấm
+                    </div>
+                    <div class="content-tintuc">
+                        14/03/2023 - 03:29
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div style="width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;" class="mb-2">
+                    <div style="width: 40%;">
+                        <img style="width: 100px; height: 70px;"
+                            src="https://bizweb.dktcdn.net/100/480/479/articles/bo-suu-tap-maxine-gold-1-768x512.jpg?v=1678782465597"
+                            alt="">
+                    </div>
+                    <div style="width: 60%;
+                    display: grid;
+                    height: 70px;">
+                        <div style="font-size: 20px;
+                        font-weight: 600;">Phòng ngủ Maxine</div>
+                        <div style="font-size: 12px;">14/03/2023 - 03:27</div>
+                    </div>
+                </div>
+                <div style="width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;" class="mb-2">
+                    <div style="width: 40%;">
+                        <img style="width: 100px; height: 70px;"
+                            src="https://bizweb.dktcdn.net/100/480/479/articles/trang-tri-768x456.jpg?v=1678782334473"
+                            alt="">
+                    </div>
+                    <div style="width: 60%;
+                    display: grid;
+                    height: 70px;">
+                        <div style="font-size: 20px;
+                        font-weight: 600;">Không gian tỏa sáng </div>
+                        <div style="font-size: 12px;">14/03/2023 - 03:27</div>
+                    </div>
+                </div>
+                <div style="width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;" class="mb-2">
+                    <div style="width: 40%;">
+                        <img style="width: 100px; height: 70px;"
+                            src="https://bizweb.dktcdn.net/100/480/479/articles/mr-hans-768x518.jpg?v=1678782106477"
+                            alt="">
+                    </div>
+                    <div style="width: 60%;
+                    display: grid;
+                    height: 70px;">
+                        <div style="font-size: 20px;
+                        font-weight: 600;">Gặp Hans Sandgren Jakobsen</div>
+                        <div style="font-size: 12px;">14/03/2023 - 03:27</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div style="width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;" class="mb-2">
+                    <div style="width: 40%;">
+                        <img style="width: 100px; height: 70px;"
+                            src="https://bizweb.dktcdn.net/100/480/479/articles/marc-levy-2-768x512.jpg?v=1678782388107"
+                            alt="">
+                    </div>
+                    <div style="width: 60%;
+                    display: grid;
+                    height: 70px;">
+                        <div style="font-size: 20px;
+                        font-weight: 600;">Cùng đến gặp Marc Levy</div>
+                        <div style="font-size: 12px;">14/03/2023 - 03:27</div>
+                    </div>
+                </div>
+                <div style="width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;" class="mb-2">
+                    <div style="width: 40%;">
+                        <img style="width: 100px; height: 70px;"
+                            src="https://bizweb.dktcdn.net/100/480/479/articles/giuong-ngu-boc-vai-pio-1m8-1-768.jpg?v=1678782172303"
+                            alt="">
+                    </div>
+                    <div style="width: 60%;
+                    display: grid;
+                    height: 70px;">
+                        <div style="font-size: 20px;
+                        font-weight: 600;">Giường ngủ Pio hiện đại</div>
+                        <div style="font-size: 12px;">14/03/2023 - 03:27</div>
+                    </div>
+                </div>
+                <div style="width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;" class="mb-2">
+                    <div style="width: 40%;">
+                        <img style="width: 100px; height: 70px;"
+                            src="https://bizweb.dktcdn.net/100/480/479/articles/cac-cach-bao-quan-sofa-da-luon-d.jpg?v=1678782014163"
+                            alt="">
+                    </div>
+                    <div style="width: 60%;
+                    display: grid;
+                    height: 70px;">
+                        <div style="font-size: 20px;
+                        font-weight: 600;">Các cách bảo quản sofa</div>
+                        <div style="font-size: 12px;">14/03/2023 - 03:27</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- phần body -->
     <footer class="block-footer">
         <div class="row">
             <div class="col-xl-4 col-sm-4 block-footer-left">
@@ -211,5 +828,34 @@
         </div>
     </footer>
 </body>
+<script>
+    $(document).ready(function () {
+        $(".slide-sanpham").owlCarousel({
+            items: 2,
+            loop: true, // Vòng lặp
+            autoplay: true, // Tự động chuyển slide
+            autoplayTimeout: 3000, // Thời gian trễ giữa các lần chuyển slide (ms)
+            autoplayHoverPause: true, // Tạm dừng tự động chuyển slide khi di chuột vào slide
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                600: {
+                    items: 2,
+                },
+                999: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                    loop: false
+                }
+            }
+        });
+    });
+
+</script>
 
 </html>
