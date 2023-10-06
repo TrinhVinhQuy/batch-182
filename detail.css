@@ -13,12 +13,29 @@
   .bg-main{
     background-color: #fca120;
   }
+  .slide{
+    min-height: 290px;
+  }
   /*main css*/
+
+  .main-page{
+    background-color: #6c757d36;
+  }
+
   .product__image--big,
   .product__image--small,
   .product__detail,
   .product__full--info,
-  .article__about
+  .article__about{
+    background-color: #fff;
+  }
+  
+  .product__image--big,
+  .product__image--small,
+  .product__detail,
+  .product__full--info,
+  .article__about,
+  .slide
   {
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   }
@@ -111,17 +128,22 @@
     width: 20%;
 }
 
+.product__article{
+  display: flex;
+  flex-direction: column;
+}
+
 .product__article--title::before{
   background: #fca120;
   content: '';
   right: 0;
-  left: 18px;
+  left: 28px;
   position: absolute;
-  top:30px;
+  top:33px;
   height: 3px;
   display: block;
   z-index: 1;
-  width: 40%;
+  width: 20%;
 }
 
 .only-list li .number{
@@ -137,4 +159,47 @@
   font-size: 16px;
   position: relative;
   top: 3px;
+}
+
+.news__item{
+  display: flex;
+}
+
+.news__image{
+  width: 90px;
+  height: 90px;
+}
+
+.news__image img{
+  width: 100%;
+  height: 100%;
+}
+
+.news__content h3{
+  font-size: 16px;
+}
+
+.news__link{
+  color: #000;
+}
+
+.news__link:hover{
+  color: #fca120;
+}
+
+@media  (max-width: 991px) and (min-width: 767px) {
+    .product__article{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .flex-half{
+      flex-basis: 48%;
+      min-height: 360px;
+    }
+
+    .news__image{
+      width: 70px;
+      height: 70px;
+    }
 }
