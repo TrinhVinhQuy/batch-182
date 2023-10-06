@@ -15,12 +15,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/product__list.css">
     <link rel="stylesheet" href="./css/detail.css">
 </head>
 <body>
+    <header id="block-header-container"></header>
     <div class="bodywrap">
         <div class="layout-collection">
             <section class="breadcrumb">
@@ -213,114 +222,74 @@
                                         </ul>
                                     </section>
                                     <section class="product__related mt-4">
-                                        <h2 class="product__related--title">
+                                        <h2 class="product__related--title mb-4">
                                             <a style="color: #000;" href="/san-pham-noi-bat" title="Sản phẩm liên quan">Sản phẩm liên quan</a>
                                         </h2>
-                                        <div class="row row-fix product__list mt-3 ">
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_1.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Đèn tre đám mây</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            290.000₫
-                                                        </p>
-                                                    </div>
+                                        <div class="slide-sanpham owl-carousel">
+                                            <div class="slide mb-3"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img  style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/28bb17172d53145dead8616047ba61.jpg?v=1678770527917"
+                                                        alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_2.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Đèn Bàn Chicago Mạ Vàng</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            290.000₫
-                                                        </p>
-                                                    </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                    src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/2.jpg?v=1678770551987"
+                                                    alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_3.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            549.000₫
-                                                        </p>
-                                                    </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/19f3411832e264154b742833a94f2c.jpg?v=1678770523820"
+                                                        alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
-                                        
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_4.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su màu tự</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            599.000₫
-                                                        </p>
-                                                    </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/24c3627dfeda74069a071252d932cb.jpg?v=1678770546000"
+                                                    alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Set 2 Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                                            </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/27c732f60dba74cc9b1414aefe35b0.jpg?v=1678770544020"
+                                                    alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                                </div>
+                                                <div style="text-align: center;">Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
                                         </div>
                                     </section>
@@ -328,122 +297,82 @@
                                         <h2 class="product__related--title">
                                             <a style="color: #000;" href="/san-pham-noi-bat" title="Sản phẩm liên quan">Sản phẩm đã xem</a>
                                         </h2>
-                                        <div class="row row-fix product__list mt-3 ">
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_1.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Đèn tre đám mây</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            290.000₫
-                                                        </p>
-                                                    </div>
+                                        <div class="slide-sanpham owl-carousel mt-4">
+                                            <div class="slide mb-3"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img  style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/28bb17172d53145dead8616047ba61.jpg?v=1678770527917"
+                                                        alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_2.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Đèn Bàn Chicago Mạ Vàng</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            290.000₫
-                                                        </p>
-                                                    </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                    src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/21e21052f1d234277b684eef6f599a.jpg?v=1678770523067"
+                                                    alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_3.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            549.000₫
-                                                        </p>
-                                                    </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/19f3411832e264154b742833a94f2c.jpg?v=1678770523820"
+                                                        alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
-                                        
-                                            <div class="col-6 col-md-4 col-xl-3 col-fix">
-                                                <div class="product__item">
-                                                    <div class="product__item--img">
-                                                        <a href="" class="product__link">
-                                                            <img src="./image/product_4.webp" alt="">
-                                                        </a >    
-                                                        <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
-                                                        <div class="product__item--button">
-                                                            <button class="btn__view btn__cart">
-                                                                <i class="fa fa-cart-plus btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn__view btn__search">
-                                                                <i class="fa fa-search btn__icon" aria-hidden="true"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product__item--info">
-                                                        <p class="product__name">
-                                                            <a href="" class="product__link">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su màu tự</a>
-                                                        </p>
-                                                        <p class="product__cost">
-                                                            599.000₫
-                                                        </p>
-                                                    </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/24c3627dfeda74069a071252d932cb.jpg?v=1678770546000"
+                                                    alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
                                                 </div>
+                                                <div style="text-align: center;">Set 2 Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ Cao Su Trắng</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
+                                            </div>
+                                            <div class="slide"
+                                                style="font-size: 16px; background-color: white;border-radius: 10px; padding-bottom: 10px;">
+                                                <div class="product__item--img mb-2">
+                                                    <a href="" class="product__link">
+                                                        <img class="mb-2" style="border-top-right-radius: 10px; border-top-left-radius: 10px;"
+                                                        src="https://bizweb.dktcdn.net/thumb/large/100/480/479/products/27c732f60dba74cc9b1414aefe35b0.jpg?v=1678770544020"
+                                                    alt="">
+                                                    </a >    
+                                                    <i class="fa fa-heart-o product__love" aria-hidden="true"></i>
+                                                </div>
+                                                <div style="text-align: center;">Tủ Giày 3 Ngăn Marcell - Màu Đá Xanh</div>
+                                                <div style="text-align: center; font-weight: 700;">549.000₫ </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
                                 <div class="col-lg-4">
-                                    <article class="product__article px-1 rounded-lg">
-                                        <section class="article__about">
+                                    <article class="product__article mb-4">
+                                        <section class="article__about px-2 rounded-lg mb-4 flex-half">
                                             <h2 class="product__article--title" style="font-size: 20px; font-weight: 700;">
                                                 Chỉ có tại Dola Furniture
                                             </h2>
-                                            <ul class="only-list">
+                                            <ul class="only-list mt-3">
                                                 <li style="display: flex" class="pl-1">
                                                     <span class="number">1</span> 
                                                     <span class="only-content">
@@ -476,7 +405,71 @@
                                                 </li>
                                             </ul>
                                         </section>
+                                        <section class="article__news px-2 rounded-lg bg-white flex-half">
+                                            <h2 class="product__article--title" style="font-size: 20px; font-weight: 700;">
+                                                Tin tức nổi bật
+                                            </h2>
+                                            <div class="news__list">
+                                                <div class="news__item mb-2">
+                                                    <div class="news__image">
+                                                        <a href="" class="news__link">
+                                                            <img src="https://bizweb.dktcdn.net/100/480/479/articles/bo-suu-tap-may-net-viet-duong-da.jpg?v=1678782553320" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news__content pl-2">
+                                                        <h3>
+                                                            <a href="" class="news__link">
+                                                                Phòng ngủ Mây cổ điển, trầm ấm
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="news__item mb-2">
+                                                    <div class="news__image">
+                                                        <a href="" class="news__link">
+                                                            <img src="https://bizweb.dktcdn.net/100/480/479/articles/bo-suu-tap-may-net-viet-duong-da.jpg?v=1678782553320" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news__content pl-2">
+                                                        <h3>
+                                                            <a href="" class="news__link">
+                                                                Phòng ngủ Mây cổ điển, trầm ấm
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="news__item mb-2">
+                                                    <div class="news__image">
+                                                        <a href="" class="news__link">
+                                                            <img src="https://bizweb.dktcdn.net/100/480/479/articles/bo-suu-tap-may-net-viet-duong-da.jpg?v=1678782553320" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news__content pl-2">
+                                                        <h3>
+                                                            <a href="" class="news__link">
+                                                                Phòng ngủ Mây cổ điển, trầm ấm
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="news__item mb-2">
+                                                    <div class="news__image">
+                                                        <a href="" class="news__link">
+                                                            <img src="https://bizweb.dktcdn.net/100/480/479/articles/bo-suu-tap-may-net-viet-duong-da.jpg?v=1678782553320" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news__content pl-2">
+                                                        <h3>
+                                                            <a href="" class="news__link">
+                                                                Phòng ngủ Mây cổ điển, trầm ấm
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </article>
+                                    
                                 </div>
                             </div>
                         </section>
@@ -485,6 +478,38 @@
             </section>
         </div>
         <script src="./js/product.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".slide-sanpham").owlCarousel({
+                    items: 2,
+                    loop: true, // Vòng lặp
+                    autoplay: true, // Tự động chuyển slide
+                    autoplayTimeout: 3000, // Thời gian trễ giữa các lần chuyển slide (ms)
+                    autoplayHoverPause: true, // Tạm dừng tự động chuyển slide khi di chuột vào slide
+                    margin: 10,
+                    nav: false,
+                    responsive: {
+                        0: {
+                            items: 2,
+                        },
+                        400: {
+                            items: 2,
+                        },
+                        600: {
+                            items: 3,
+                        },
+                        
+                        1200: {
+                            items: 4,
+                            loop: false
+                        }
+                    }
+                });
+            });
+        
+        </script>
     </div> 
+    <footer id="block-footer-container"></footer>
+    
 </body>
 </html>
