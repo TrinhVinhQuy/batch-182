@@ -1,0 +1,143 @@
+/* default color: #F86E4E */
+.bg-color,
+section.call-to-action,
+#mainmenu li li a:hover,
+.price-row,
+.blog-list .date,
+.blog-read .date,
+.slider-info .text1,
+#filters a.selected,
+.btn-primary,
+.bg-id-color,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.dropcap,
+.fullwidthbanner-container a.btn,
+.feature-box-big-icon i,
+#testimonial-full,
+.icon-deco i,
+.blog-list .date-box .day,
+.bloglist .date-box .day,
+.feature-box-small-icon .border,
+.small-border,
+#jpreBar,
+.date-post,
+.team-list .small-border,
+.de-team-list .small-border,
+.btn-line:hover,a.btn-line:hover,
+.btn-line.hover,a.btn-line.hover,
+.owl-arrow span,
+.de-progress .progress-bar,
+#btn-close-x:hover,
+.box-fx .info,
+.de_tab.tab_steps .de_nav li span,
+.de_testi blockquote:before,
+#services-list li.active,
+#services-list li a:hover,
+.btn-more,
+.widget .small-border,
+.product img:hover,
+#btn-search
+{
+	background-color:#F86E4E;
+}
+
+.feature-box i,
+#mainmenu li:hover > ul,
+.date-box .day,
+.slider_text h1,
+.id-color,
+.pricing-box li h1,
+.title span,
+i.large:hover,
+.feature-box-small-icon-2 i,
+address span i,
+.pricing-dark .pricing-box li.price-row,
+.price,
+#mainmenu a:hover,
+#mainmenu a.active,
+#mainmenu li a:after,
+header.smaller #mainmenu a:hover,
+header.smaller #mainmenu a.active,
+.pricing-dark .pricing-box li.price-row,
+.dark .feature-box-small-icon i,
+a.btn-slider:after,
+.feature-box-small-icon i,
+a.btn-line:after,
+.team-list .social a,
+.de_contact_info i,
+.de_count,
+.dark .btn-line:hover:after, .dark a.btn-line:hover:after, .dark a.btn-line.hover:after,
+a.btn-text:after,
+.separator span  i,
+address span strong,
+.de_tab.tab_steps .de_nav li span:hover,
+.de_testi_by,
+.pf_text,
+.widget_tags li a,
+.dark .btn-line:after, .dark  a.btn-line:after,
+.crumb a
+{
+	color:#F86E4E;
+}
+
+.feature-box i,
+#filters a:hover,
+#filters a.selected,
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus
+.feature-box-big-icon i:after,
+.social-icons i,
+.btn-line:hover,a.btn-line:hover,
+.btn-line.hover,a.btn-line.hover,
+.product img:hover,
+#contact_form input[type=text]:focus,#contact_form textarea:focus, #search:focus,
+#contact_form .de_light input[type=text]:focus, #contact_form .de_lighttextarea:focus, #contact_form .de_light #search:focus
+{
+
+	border-color:#F86E4E;
+}
+
+.box-fx .inner,
+.dark .box-fx .inner,
+.blog-list img,
+.arrow-up
+{
+	border-bottom-color:#F86E4E;
+}
+
+.arrow-down{
+	border-top-color:#F86E4E;
+}
+
+.callbacks_nav {
+	background-color:#F86E4E;
+}
+
+
+.de_tab .de_nav li span {
+border-top: 3px solid #F86E4E;
+}
+
+.feature-box-big-icon i:after {
+border-color: #F86E4E transparent; /*same colour as the lower of the bubble's gradient*/
+}
+
+.de_review li.active img{
+	border:solid 4px #F86E4E;
+}
+
+.red{color:#ff0000 !important;}
+.teal{color:#009999 !important;}
+.purple{color:#663366 !important;}
+.green{color:#009900 !important;}
+
