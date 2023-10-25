@@ -5,10 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class _Default : System.Web.UI.Page
+namespace doannoithat
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Default : System.Web.UI.Page
     {
-        Response.Redirect("index.html");
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Response.Redirect("index.html");
+        }
     }
 }

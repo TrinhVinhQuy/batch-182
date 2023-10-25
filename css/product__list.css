@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+/*breadcrumb css*/
+.breadcrumb {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("/image/breadcrumb.webp") center / cover no-repeat;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.breadcrumb .breadcrumb--title {
+  text-align: center;
+  font-size: 40px;
+  color: #fca120;
+  font-weight: 600;
+}
+
+.link {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.link .homepage span {
+  color: #fff;
+}
+
+.link li {
+  display: inline;
+}
+
+.link .homepage .mr_lr svg {
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+}
+
+.link .all-prod {
+  color: #fca120;
+}
+
+.link span {
+  font-weight: 400;
+}
+/*breadcrumb css*/
+/*main css*/
+.aside__menu {
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.aside__menu--title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.aside__menu--title::before {
+  background: #fca120;
+  content: "";
+  right: 0;
+  left: 0;
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  display: block;
+  z-index: 1;
+  width: 40%;
+}
+
+.navbar-pills {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.nav-item {
+  padding: 0 10px 10px 10px;
+  position: relative;
+}
+
+.nav-link,
+.subnav-link {
+  color: #000;
+  padding-left: 0;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.nav--open {
+  top: 8px;
+  position: absolute;
+  left: 95%;
+}
+
+.nav--open:active{
+  color: #fc2020;
+}
+
+.subnav {
+  display: none;
+}
+
+.subnav-item {
+  padding: 8px 10px;
+}
+
+.nav-link:hover{
+  color: #fca120;
+}
+
+.subnav-link:hover{
+  color: #fca120;
+}
+
+.nav-sort {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product__item {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product__item--img {
+  position: relative;
+}
+
+.product__love {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product__item--img img {
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.product__item--button .btn__view {
+  border: 0;
+  padding: 9px 10px;
+  border-radius: 5px;
+  background: #fff;
+  display: inline-flex;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.product__item--button {
+  position: absolute;
+  bottom: 10px;
+  display: none;
+  left: 30%;
+}
+
+.product__item--button .btn__view .btn__icon {
+  font-size: 18px;
+}
+
+.product__item--img:hover .product__item--button {
+  display: block;
+}
+
+.btn__cart:hover {
+  background-color: #fca120;
+}
+
+.btn__search:hover {
+  background-color: #fca120;
+}
+
+.product__item--info {
+  text-align: center;
+  min-height: 130px;
+}
+
+.product__name {
+  padding: 8px 8px;
+}
+
+.product__link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.product__link:hover {
+  color: #fca120;
+  text-decoration: none;
+}
+
+.product__cost {
+  font-size: 19px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+#open__aside {
+  color: #fff;
+  background: #fca120;
+  position: fixed;
+  right: 0;
+  top: 35% !important;
+  cursor: pointer;
+  z-index: 99;
+  font-size: 18px;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-image: url("/image/open__aside.webp");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 43px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 1px 3px 6px #888888;
+  display: none;
+  border: none;
+  position: absolute;
+  top: 150px;
+}
+
+#close__aside {
+  color: #fff;
+  background: #fc2020;
+  width: 43px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 6px #888888;
+  background-image: url("/image/close__aside.webp");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  border: none;
+  position: absolute;
+  right: 45%;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .aside__mobile {
+    top: 0 !important;
+    padding: 0 15px;
+    position: fixed;
+    width: 256px;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 9999;
+    padding-top: 10px;
+  }
+
+  .aside__menu {
+    box-shadow: none !important;
+  }
+  #open__aside {
+    display: block !important;
+  }
+  #close__aside {
+    display: block !important;
+  }
+
+  .btn__view{
+    display: none !important;
+  }
+}
+
+
